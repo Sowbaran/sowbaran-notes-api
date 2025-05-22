@@ -1,18 +1,46 @@
-# Notes API
+# 📝 Notes API
 
-A simple Express.js backend server for managing notes.  
-Currently includes a basic `/ping` route to verify the server is running.
+A simple Express.js backend server for managing notes — built as part of my backend-heavy MERN stack development journey.
+---
 
-## Getting Started
+## 🚀 Features
+
+- `GET /notes` – Get all notes
+- `GET /notes/:id` – Get a note by ID
+- `POST /notes` – Add a new note
+- `PUT /notes/:id` – Update a note
+- `DELETE /notes/:id` – Delete a note
+
+---
+
+## 📂 Folder Structure
+
+notes-api/
+├── index.js # Entry point
+└── routes/
+└── notes.js # All CRUD route logic
+
+
+---
+
+## 🛠️ Tech Stack
+
+- Node.js
+- Express.js
+
+---
+
+## 📦 Getting Started
 
 ### Prerequisites
 
-- Node.js installed (v12 or above recommended)
-- npm (comes with Node.js)
+- Node.js (v12+)
+- npm (Node Package Manager)
 
 ### Installation
 
-1. Clone the repository:
-
 ```bash
 git clone https://github.com/Sowbaran/sowbaran-notes-api.git
+cd sowbaran-notes-api
+npm install
+node index.js
